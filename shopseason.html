@@ -1,0 +1,208 @@
+<html>
+  <title>Seasons</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+</html>
+<body>
+ 
+ <!--NAVIGATION-->
+ <nav>
+  <div class="navbar">
+    <a href="index.html" class="logo"> <img src="assets/image/WLOGO1.png"></a>
+    <div class="nav-links">
+      <ul class="links">
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li>
+          <p>SHOP</p>
+          
+          <ul class="shop-sub-menu sub-menu">
+            <li><a href="bestseller.html">Best Seller</a></li>
+            <li class="more">
+              <span><a href="shopseason.html">Seasons</a>
+            </span>
+              <ul class="more-sub-menu sub-menu">
+                <li><a href="summer.html">Summer</a></li>
+                <li><a href="winter.html">Winter</a></li>
+                <li><a href="spring.html">Spring</a></li>
+                <li><a href="fall.html">Fall</a></li>
+              </ul>
+            <li><a href="animal.html">Animal</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="dailylook.html">Dailylook</a></li>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>BOARD</p>
+          <ul class="js-sub-menu sub-menu">
+            <li><a href="notice.html">Notice</a></li>
+            <li><a href="rating.html">Feedback</a></li>
+          </ul>
+        </li>
+        <li><a href="packagelook.html">PACKAGELOOK</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!---navigation end--->
+
+
+
+<!--Right Side Buttons Start-->	
+<div class="social-media-bar">
+  <ul class="social-media">
+    <li>
+      <a href= "https://wa.me/0102800725" target="_blank"><img width="32" height="32"  src="assets/image/socialmediaws.jpg"/>
+      <p>WhatsApp</p></a>
+    </li>
+    <li>
+      <a href= "https://instagram.com/wforwrappe?igshid=NTdlMDg3MTY=" target="_blank"><img width="32" height="32" src="assets/image/socialmediaig.jpg" />
+      <p>Instagram</p></a>
+    </li>
+    <li>
+      <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank"><img width="32" height="32" src="assets/image/socialmediaemail.jpg" />
+      <p>Email</p> </a>
+  </li>
+</ul>
+</div>
+<!--Right Side Buttons End-->
+
+ 
+  
+
+<!----shop header section------>
+<div class="bg-image">
+  <h1 class="fade white">
+    SEASONS 
+  </h1>
+</div>
+ <!----shop header section end------>
+
+ <!--bawah ni start card untuk season-->
+
+<!-------flipping cards-------->
+
+<div class="jarak">
+  
+  <a href="summer.html"><img id="myImg" src="assets/image/shopsummer.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+
+<a href="spring.html"><img id="myImg" src="assets/image/shopspring.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+<a href="fall.html"> <img id="myImg" src="assets/image/shopfall.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+
+<a href="winter.html"><img id="myImg" src="assets/image/shopwinter.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+</div>
+
+
+<br><br>
+<!------Footer----->
+<div class="footer">
+  <div class="container-footer">
+    <h3>
+      <a href="privacy.html" style="color: rgb(0, 0, 0)" target="_blank">Privacy Policy</a>
+    </h3>
+  </div>
+  <div class="container-footer">
+    <p style="font-size: 12pt">
+      Company Name : wforwrappe CEO : Kim Danial <br />
+      <br />Address : 3 Storey Semi D Factory Suntrack Hub Bangi Industrial
+      Park, Bandar Baru Bangi, Selangor <br />
+      <br />E-mail : wforwrappeofficial@gmail.com Phone Office : 5148194739
+      <br /><br /><br />©Copyright by wforwrappe
+    </p>
+  </div>
+</div>
+<!----footer end----->
+
+
+<!---button anchor-->
+<button onclick="topFunction()" id="myanchor" title="Go to top">Top</button>
+
+
+<script> 
+  type="text/javascript">
+  window.addEventListener('scroll', reveal);
+  
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+  
+    for(var i = 0; i < reveals.length; i++){
+  
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 50;
+  
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+  </script>
+
+
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myanchor");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<html>
+  <title>Board</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+</html>
+<body>
+ 
+
+
+  <!--NAVIGATION-->
+  <nav>
+    <div class="navbar">
+      <a href="index.html" class="logo"> <img src="assets/image/WLOGO1.png"></a>
+      <div class="nav-links">
+        <ul class="links">
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li>
+            <p>SHOP</p>
+            
+            <ul class="shop-sub-menu sub-menu">
+              <li><a href="bestseller.html">Best Seller</a></li>
+              <li class="more">
+                <span><a href="shopseason.html">Seasons</a>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="summer.html">Summer</a></li>
+                  <li><a href="winter.html">Winter</a></li>
+                  <li><a href="spring.html">Spring</a></li>
+                  <li><a href="fall.html">Fall</a></li>
+                </ul>
+              <li><a href="animal.html">Animal</a></li>
+              <li><a href="vintage.html">Vintage</a></li>
+              <li><a href="dailylook.html">Dailylook</a></li>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>BOARD</p>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="notice.html">Notice</a></li>
+              <li><a href="rating.html">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a href="packagelook.html">PACKAGELOOK</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!---navigation end--->
+
+ 
+<div class="bgg-image"></div>
+
+    <div class="bgg-text">
+      <h1 style="font-size: 120px">COMING SOON</h1>
+<br><br>
+      <div class="containerrr">
+        <div class="clear">
+          <h1 id="headline">wforwrappe 10th Anniversary</h1>
+          <div id="countdown">
+            <ul>
+              <hi><span id="days"></span>days</hi>
+              <hi><span id="hours"></span>Hours</hi>
+              <hi><span id="minutes"></span>Minutes</hi>
+              <hi><span id="seconds"></span>Seconds</hi>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+<!------Footer----->
+<div class="footer">
+  <div class="container-footer">
+    <h3>
+      <a href="privacy.html" style="color: rgb(0, 0, 0)" target="_blank">Privacy Policy</a>
+    </h3>
+  </div>
+  <div class="container-footer">
+    <p style="font-size: 12pt">
+      Company Name : wforwrappe CEO : Kim Danial <br />
+      <br />Address : 3 Storey Semi D Factory Suntrack Hub Bangi Industrial
+      Park, Bandar Baru Bangi, Selangor <br />
+      <br />E-mail : wforwrappeofficial@gmail.com Phone Office : 5148194739
+      <br /><br /><br />©Copyright by wforwrappe
+    </p>
+  </div>
+</div>
+<!----footer end----->
+
+    <script>
+      (function () {
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+        //I'm adding this section so I don't have to keep updating this pen every year 🙂
+        //remove this if you don't need it
+        let today = new Date(),
+          dd = String(today.getDate()).padStart(2, "0"),
+          mm = String(today.getMonth() + 1).padStart(2, "0"),
+          yyyy = today.getFullYear(),
+          nextYear = yyyy + 1,
+          dayMonth = "06/13/",
+          birthday = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > birthday) {
+          birthday = dayMonth + nextYear;
+        }
+        //end
+
+        const countDown = new Date(birthday).getTime(),
+          x = setInterval(function () {
+            const now = new Date().getTime(),
+              distance = countDown - now;
+
+            (document.getElementById("days").innerText = Math.floor(
+              distance / day
+            )),
+              (document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+              )),
+              (document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+              )),
+              (document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+              ));
+
+            //do something later when date is reached
+            if (distance < 0) {
+              document.getElementById("headline").innerText =
+                "It's my birthday!";
+              document.getElementById("countdown").style.display = "none";
+              document.getElementById("content").style.display = "block";
+              clearInterval(x);
+            }
+            //seconds
+          }, 0);
+      })();
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,183 @@
+<html>
+  <title>PackageLook</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+</html>
+<body>
+ 
+
+
+  <!--NAVIGATION-->
+  <nav>
+    <div class="navbar">
+      <a href="index.html" class="logo"> <img src="assets/image/WLOGO1.png"></a>
+      <div class="nav-links">
+        <ul class="links">
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li>
+            <p>SHOP</p>
+            
+            <ul class="shop-sub-menu sub-menu">
+              <li><a href="bestseller.html">Best Seller</a></li>
+              <li class="more">
+                <span><a href="shopseason.html">Seasons</a>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="summer.html">Summer</a></li>
+                  <li><a href="winter.html">Winter</a></li>
+                  <li><a href="spring.html">Spring</a></li>
+                  <li><a href="fall.html">Fall</a></li>
+                </ul>
+              <li><a href="animal.html">Animal</a></li>
+              <li><a href="vintage.html">Vintage</a></li>
+              <li><a href="dailylook.html">Dailylook</a></li>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>BOARD</p>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="notice.html">Notice</a></li>
+              <li><a href="rating.html">Feedback</a></li>
+            </ul>
+          </li>
+          <li><a href="packagelook.html">PACKAGELOOK</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!---navigation end--->
+
+  <!--Right Side Buttons Start-->	
+<div class="social-media-bar">
+  <ul class="social-media">
+    <li>
+      <a href= "https://wa.me/0102800725" target="_blank"><img width="32" height="32"  src="assets/image/socialmediaws.jpg"/>
+      <p>WhatsApp</p></a>
+    </li>
+    <li>
+      <a href= "https://instagram.com/wforwrappe?igshid=NTdlMDg3MTY=" target="_blank"><img width="32" height="32" src="assets/image/socialmediaig.jpg" />
+      <p>Instagram</p></a>
+    </li>
+    <li>
+      <a href= "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank"><img width="32" height="32" src="assets/image/socialmediaemail.jpg" />
+      <p>Email</p> </a>
+  </li>
+</ul>
+</div>
+<!--Right Side Buttons End-->
+
+  <br><br><br><br><br>
+<!-----audio section----->
+<center><audio controls autoplay>
+  <source src="assets/audio/Fouroclock.mp3" type="audio/mp3">
+</audio></center>
+<!------audio section end------>
+
+<br><br>
+<!-----package look section------->
+<center><h1>Package Look</h1><hr></center>
+<div id="gallery" class="container-fluid">  
+  <img src="assets/image/gallery1.jpg">
+  <img src="assets/image/gallery2.jpg">
+   <img src="assets/image/gallery3.jpg" >
+  <img src="assets/image/gallery4.jpg" class="img-responsive">
+  <img src="assets/image/gallery5.jpg" class="img-responsive">
+<img src="assets/image/gallery6.jpg" class="img-responsive">
+  <img src="assets/image/gallery7.jpg" class="img-responsive">
+  <img src="assets/image/gallery8.jpg" class="img-responsive">
+  <img src="assets/image/gallery9.jpg" class="img-responsive">
+  <img src="assets/image/gallery10.jpg" class="img-responsive">
+  <img src="assets/image/gallery11.jpg" class="img-responsive">
+<img src="assets/image/gallery12.jpg" class="img-responsive">
+<img src="assets/image/gallery13.jpg" class="img-responsive">
+<img src="assets/image/gallery14.jpg" class="img-responsive">
+<img src="assets/image/gallery16.jpg" class="img-responsive">
+  <img src="assets/image/gallery17.jpg" class="img-responsive">
+<img src="assets/image/gallery18.jpg" class="img-responsive">
+  <img src="assets/image/gallery19.jpg" class="img-responsive">
+  <img src="assets/image/gallery20.jpg" class="img-responsive">
+  <img src="assets/image/gallery21.jpg" class="img-responsive">
+  <img src="assets/image/gallery22.jpg" class="img-responsive">
+  <img src="assets/image/gallery23.jpg" class="img-responsive">
+<img src="assets/image/gallery24.jpg" class="img-responsive">
+<img src="assets/image/gallery25.jpg" class="img-responsive">
+
+</div>
+
+</div>
+<!-------package look section end-------->
+
+
+
+<!------Footer----->
+<div class="footer">
+  <div class="container-footer">
+    <h3>
+      <a href="privacy.html" style="color: rgb(0, 0, 0)" target="_blank">Privacy Policy</a>
+    </h3>
+  </div>
+  <div class="container-footer">
+    <p style="font-size: 12pt">
+      Company Name : wforwrappe CEO : Kim Danial <br />
+      <br />Address : 3 Storey Semi D Factory Suntrack Hub Bangi Industrial
+      Park, Bandar Baru Bangi, Selangor <br />
+      <br />E-mail : wforwrappeofficial@gmail.com Phone Office : 5148194739
+      <br /><br /><br />©Copyright by wforwrappe
+    </p>
+  </div>
+</div>
+<!----footer end----->
+
+<!---button anchor-->
+<button onclick="topFunction()" id="myanchor" title="Go to top">TOP</button>
+
+<script>
+  //package look section
+  $(document).ready(function(){
+    $("img").click(function(){
+    var t = $(this).attr("src");
+    $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+    $("#myModal").modal();
+  });
+  
+  $("video").click(function(){
+    var v = $("video > source");
+    var t = v.attr("src");
+    $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+    $("#myModal").modal();  
+  });
+  });//EOF Document.ready
+  </script>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myanchor");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</body>
+</html>
